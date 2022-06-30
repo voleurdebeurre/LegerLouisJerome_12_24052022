@@ -1,0 +1,35 @@
+.pageHeader{
+    display: flex;
+    flex-direction: row;
+    background: var(--color-black);
+}
+
+.brandLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.brandLogo h1{
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+nav{
+    flex: 1;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    color: var(--color-white);
+}

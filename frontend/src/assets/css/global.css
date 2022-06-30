@@ -1,0 +1,46 @@
+/* ROBOTO FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+  /* COLORS */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(2, 2, 3, 1);
+  --color-darkgrey: rgba(40, 45, 48, 1);
+  --color-medgrey: rgba(196, 196, 196, .5);
+  --color-secmedgrey: rgba(116, 121, 140, 1);
+  --color-lightgrey: rgba(251, 251, 251, 1);
+  --color-primary: rgba(255, 1, 1, 1);
+  --color-primary-dim: rgba(255, 1, 1, .1);
+  --color-blue: rgba(74, 184, 255, 1);
+  --color-blue-dim: rgba(74, 184, 255, .1);
+  --color-yellow: rgba(253, 204, 12, 1);
+  --color-yellow-dim: rgba(249, 206, 35, .1);
+  --color-pink: rgba(253, 81, 129, 1);
+  --color-pink-dim: rgba(253, 81, 129, .1);
+
+  /* FONTS */
+  --fs-3xs: .5rem;
+  --fs-2xs: .75rem;
+  --fs-xs: .875rem;
+  --fs-s: 1rem;
+  --fs-m: 1.5rem;
+  --fs-l: 3rem;
+}
+
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+#root{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width : 1200px) {
+  #root{
+    height: auto;
+  }
+}

@@ -1,0 +1,22 @@
+.homeScreen{
+    height: 100vh; width: 100vw;
+    background: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.brandLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.brandLogo h1{
+    color: var(--color-primary);
+    font-weight: 400;
+}

@@ -1,0 +1,69 @@
+.userSelection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.singleUserSelect{
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: var(--color-medgrey);
+    width: 15rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.singleUserSelect::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: var(--color-black);
+    opacity: .3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+a[data-userid="12"]{
+    background: url("../images/user-karl.jpg");
+    background-size: cover;
+}
+a[data-userid="18"]{
+    background: url("../images/user-cecilia.jpg");
+    background-size: cover;
+}
+
+.singleUserSelect span{
+    position: relative;
+    font-size: var(--fs-l);
+    color: var(--color-white);
+    font-weight: 700;
+    z-index: 3;
+    opacity: 0;
+}
+
+.singleUserSelect:hover{
+    transform: scale(1.02);
+    transition: all .3s;
+}
+
+.singleUserSelect:hover.singleUserSelect::after{
+    opacity: 0;
+    transition: all .3s;
+}
+
+.singleUserSelect:hover.singleUserSelect span{
+    opacity: 1;
+    transition: all .3s;
+}

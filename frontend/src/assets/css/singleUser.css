@@ -1,0 +1,236 @@
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    max-width: max-content;
+    background: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.sidebarNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar img{
+    width: 4rem;
+}
+
+.sidebar footer{
+    transform: rotate(-90deg);
+    width: max-content;
+    align-self: center;
+    margin-bottom: 3rem;
+}
+
+.sidebar footer p{
+    color: var(--color-white);
+    font-size: var(--fs-2xs);
+}
+    
+.userContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    padding: 2% 3%;
+}
+
+.userContent header h2{
+    font-size: var(--fs-l);
+    font-weight: 500;
+    padding: 0 0 1rem 0;
+}
+
+.userContent header h2 span{
+    color: var(--color-primary)
+}
+
+.userDataWrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.graphSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.dailyActivity{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-lightgrey);
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+}
+
+.dailyActivity h3{
+    font-weight: 700;
+    font-size: var(--fs-s);
+}
+
+.dailyActivityTooltip{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem;
+    font-size: var(--fs-2xs);
+}
+
+.secGraphs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.secGraph{
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    min-width: 20rem;
+}
+
+.avgSession{
+    background: var(--color-primary);
+}
+
+.activityType{
+    background: var(--color-darkgrey);
+}
+
+.score{
+    background: var(--color-lightgrey);
+}
+
+.progressLabel{
+    position: absolute;
+    width: 100%;
+    top: 7rem;
+    text-align: center;
+    color: var(--color-secmedgrey);
+    font-weight: 700;
+}
+
+.progressLabel span{
+    color: var(--color-black);
+    font-size: var(--fs-m);
+    font-weight: 700;
+}
+
+
+.avgSession h5, .score h5{
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    z-index: 2;
+    font-size: var(--fs-s);
+    color: rgba(255, 255, 255, .6);
+}
+
+.score h5{
+    color: var(--color-darkgrey)
+}
+
+.avgSessionTooltip{
+    padding: 1rem;
+}
+
+.userMeta{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.keyInformation{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background: var(--color-lightgrey);
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    align-items: center;
+    min-width: 20rem;
+}
+
+.keyInformation p{
+    font-weight: 600;
+    font-size: var(--fs-s);
+    color: var(--color-secmedgrey);
+}
+
+.keyInformation p span{
+    font-size: var(--fs-m);
+    color: var(--color-darkgrey);
+    
+}
+
+
+@media screen and (max-width : 1550px) {
+    .userContent{
+        max-width: calc(100% - 135px)
+    }
+
+    .userDataWrapper{
+        flex-direction: column-reverse;
+    }
+
+    .userMeta{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .keyInformation{
+        flex-direction: column;
+        flex-grow: 1;
+        min-width: 10rem;
+    }
+
+    .keyInformation p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .secGraphs{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width : 921px) {
+
+    .userDataWrapper{
+        flex-direction: column-reverse;
+    }
+
+    .userMeta{
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .keyInformation{
+        flex-direction: row;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width : 840px) {
+    .secGraphs{
+        grid-template-columns: 1fr;
+    }
+}
