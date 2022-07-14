@@ -10,7 +10,7 @@ function PageNotFound() {
                 <img src={logo} alt='SportSee' />
                 <h1>SportSee</h1>
             </div>
-            <div className="404">
+            <div className="pageNotFound">
                 <h1>Oups ! Cette page n'existe pas...</h1>
                 <Link to={`/`}>
                     Revenir à l'index
