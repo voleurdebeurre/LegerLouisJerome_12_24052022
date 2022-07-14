@@ -1182,7 +1182,7 @@
     
 
     
-    <h4 class="name" id="FetchAPIData"><span class="type-signature"></span>FetchAPIData<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="FetchAPIData"><span class="type-signature"></span>FetchAPIData<span class="signature">(urlId)</span><span class="type-signature"></span></h4>
     
 
     
@@ -1199,6 +1199,55 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>urlId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A string param that contains the requested user ID</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -1234,7 +1283,144 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="utils_FetchAPIData.js.html">utils/FetchAPIData.js</a>, <a href="utils_FetchAPIData.js.html#line8">line 8</a>
+        <a href="utils_FetchAPIData.js.html">utils/FetchAPIData.js</a>, <a href="utils_FetchAPIData.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="FetchLocalData"><span class="type-signature"></span>FetchLocalData<span class="signature">(urlId)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Function that gets data from the local json database for selected user</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>urlId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A string param that contains the requested user ID</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_FetchLocalData.js.html">utils/FetchLocalData.js</a>, <a href="utils_FetchLocalData.js.html#line11">line 11</a>
     </li></ul></dd>
     
 
@@ -1514,6 +1700,162 @@
     
 
     
+    <h4 class="name" id="Score"><span class="type-signature"></span>Score<span class="signature">(data)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Component for showing the overall progression against user's objective.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>User's scoreData data object</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_Score.js.html">components/Score.js</a>, <a href="components_Score.js.html#line26">line 26</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>{
+        id: 12,
+        userInfos: {
+            firstName: 'Karl',
+            lastName: 'Dovineau',
+            age: 31,
+        },
+        todayScore: 0.12,
+        keyData: {
+            calorieCount: 1930,
+            proteinCount: 155,
+            carbohydrateCount: 290,
+            lipidCount: 50
+        }
+    }</code></pre>
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="SingleUser"><span class="type-signature"></span>SingleUser<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
@@ -1700,13 +2042,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#ActivityType">ActivityType</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#AvgSession">AvgSession</a></li><li><a href="global.html#CoverRectangle">CoverRectangle</a></li><li><a href="global.html#CustomTooltip">CustomTooltip</a></li><li><a href="global.html#DailyActivity">DailyActivity</a></li><li><a href="global.html#FetchAPIData">FetchAPIData</a></li><li><a href="global.html#Header">Header</a></li><li><a href="global.html#KeyInformation">KeyInformation</a></li><li><a href="global.html#SingleUser">SingleUser</a></li><li><a href="global.html#UserSelect">UserSelect</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#ActivityType">ActivityType</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#AvgSession">AvgSession</a></li><li><a href="global.html#CoverRectangle">CoverRectangle</a></li><li><a href="global.html#CustomTooltip">CustomTooltip</a></li><li><a href="global.html#DailyActivity">DailyActivity</a></li><li><a href="global.html#FetchAPIData">FetchAPIData</a></li><li><a href="global.html#FetchLocalData">FetchLocalData</a></li><li><a href="global.html#Header">Header</a></li><li><a href="global.html#KeyInformation">KeyInformation</a></li><li><a href="global.html#Score">Score</a></li><li><a href="global.html#SingleUser">SingleUser</a></li><li><a href="global.html#UserSelect">UserSelect</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Wed Jun 22 2022 18:22:29 GMT+0200 (Central European Summer Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Thu Jul 14 2022 11:11:44 GMT+0200 (Central European Summer Time)
 </footer>
 
 <script> prettyPrint(); </script>

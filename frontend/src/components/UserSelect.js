@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
  * @component
  */
 function UserSelect() {
-
     return (
         <div className="userSelection">
             {/** For each user generate a Link to user's page (ex: /users/18) */}

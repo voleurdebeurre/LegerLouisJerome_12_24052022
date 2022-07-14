@@ -10,7 +10,7 @@
         "monospaceLinks": true
     },
     "opts": {
-        "destination": "./jsodc",
+        "destination": "./jsdoc",
         "recurse": true
     }
 }

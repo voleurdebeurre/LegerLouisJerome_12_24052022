@@ -1,6 +1,13 @@
 import localData from "../assets/db/mock_data.js";
 import { useEffect, useState } from 'react';
 
+/** 
+ * Function that gets data from the local json database for selected user 
+ *
+ * @param {string} urlId - A string param that contains the requested user ID
+ *
+ */
+
 export function FetchLocalData(urlId){
     urlId = parseInt(urlId)
     // Fetches API Data

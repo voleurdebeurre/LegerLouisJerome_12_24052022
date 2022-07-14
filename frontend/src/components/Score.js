@@ -2,8 +2,28 @@ import '../assets/css/singleUser.css'
 import React from 'react';
 import { ResponsiveContainer, RadialBarChart, PolarAngleAxis, RadialBar } from 'recharts';
 
+/**
+ * Component for showing the overall progression against user's objective.
+ *
+ * @component
+ * @param {Object} data User's scoreData data object
+ * @example {
+        id: 12,
+        userInfos: {
+            firstName: 'Karl',
+            lastName: 'Dovineau',
+            age: 31,
+        },
+        todayScore: 0.12,
+        keyData: {
+            calorieCount: 1930,
+            proteinCount: 155,
+            carbohydrateCount: 290,
+            lipidCount: 50
+        }
+    }
+ */
 function Score(data) {
-    
 
     let scoreData = [{}];
 
